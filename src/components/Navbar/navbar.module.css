@@ -1,0 +1,17 @@
+.navContainer {
+	background-color: #f4f4f4;
+	height: 90px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+}
+.navLinks a {
+	font-size: 32px;
+	color: gray;
+}
+.navLinks a:hover {
+	color: black;
+}

@@ -1,0 +1,23 @@
+.formContainer {
+	background-color: #fff;
+	padding: 40px;
+	border-radius: 20px;
+	width: 100%;
+	max-width: 400px;
+}
+.formContainer input {
+	border: none;
+	outline: none;
+	padding: 4px 2px;
+	border-bottom: 2px solid var(--secondary);
+}
+.formContainer input:focus {
+	border-bottom: 2px solid var(--primary);
+}
+.formContainer button {
+	text-align: left;
+	width: max-content;
+	background-color: var(--primary);
+	padding: 8px 12px;
+	border-radius: 8px;
+}

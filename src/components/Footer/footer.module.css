@@ -1,0 +1,27 @@
+.socialIcons a {
+	font-size: 32px;
+	color: gray;
+}
+.socialIcons a:hover,
+.socialIcons a:focus {
+	color: black;
+}
+
+.footerLinks {
+	display: flex;
+	flex-direction: column;
+}
+.footerLinks a {
+	color: #666;
+	margin-bottom: 2px;
+}
+.footerLinks a:hover,
+.footerLinks a:focus {
+	color: black;
+}
+@media screen and (max-width: 639px) {
+	.logoContainer {
+		padding-bottom: 20px;
+		border-bottom: 2px solid var(--primary);
+	}
+}

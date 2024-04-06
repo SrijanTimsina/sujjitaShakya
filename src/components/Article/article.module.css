@@ -1,0 +1,14 @@
+.newsArticle {
+	background-color: var(--light);
+}
+.newsArticle:hover {
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+.image {
+	width: 100%;
+	aspect-ratio: 1/0.6;
+}
+.description {
+	max-height: 120px;
+	overflow: hidden;
+}

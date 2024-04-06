@@ -1,0 +1,78 @@
+.sidebarContainer {
+	width: 25px;
+	height: 32px;
+}
+@media screen and (max-width: 400px) {
+	.sidebarContainer {
+		width: 20px;
+	}
+}
+.navItems {
+	position: fixed;
+	top: 90px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	transform: translateX(-100vw);
+	transition: transform 0.5s ease-in-out;
+	overflow: auto;
+	padding-top: 40px;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navItemsActive {
+	transform: translate(0, 0);
+}
+.navItems a {
+	color: white;
+	font-size: 24px;
+}
+.navItems a:hover {
+	color: var(--primary);
+}
+.navActive:before,
+.navActive:after {
+	box-shadow: none !important;
+}
+.navActive:before {
+	transform: rotate(-45deg) !important;
+}
+.navActive:after {
+	transform: rotate(45deg) !important;
+}
+
+.navToggle {
+	width: 100%;
+	z-index: 2;
+	width: 100%;
+	text-align: right;
+	position: relative;
+}
+
+.navToggle:hover {
+	cursor: pointer;
+}
+.navToggle:before,
+.navToggle:after {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 0;
+	transform: translate(0, 0);
+	width: 100%;
+	height: 4px;
+	background: black;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.navToggle:before {
+	box-shadow: 0 8px 0 0 black;
+}
+.navToggle:after {
+	box-shadow: 0 -8px 0 0 black;
+}
