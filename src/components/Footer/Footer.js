@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import styles from "./footer.module.css";
 
 export default function Footer() {
@@ -17,11 +17,20 @@ export default function Footer() {
 						<div
 							className={`${styles.socialIcons} flex gap-4 mt-4 pl-2`}
 						>
-							<Link href="/">
+							<Link
+								href="https://www.facebook.com/sujita.shakya.1/"
+								target="_blank"
+							>
 								<FaFacebook />
 							</Link>
-							<Link href="/">
+							<Link
+								href="https://twitter.com/shakyasujita"
+								target="_blank"
+							>
 								<FaTwitter />
+							</Link>
+							<Link href="/" target="_blank">
+								<FaInstagram />
 							</Link>
 						</div>
 					</div>

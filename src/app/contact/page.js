@@ -1,7 +1,12 @@
 import React from "react";
 import { IoIosMail } from "react-icons/io";
 import Link from "next/link";
-import { FaPhoneAlt, FaFacebook, FaTwitter } from "react-icons/fa";
+import {
+	FaPhoneAlt,
+	FaFacebook,
+	FaTwitter,
+	FaInstagram,
+} from "react-icons/fa";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import styles from "./contactPage.module.css";
 
@@ -27,11 +32,20 @@ export default function contact() {
 						</div>
 
 						<div className={`${styles.socialLinks} flex gap-4`}>
-							<Link href="/">
+							<Link
+								href="https://www.facebook.com/sujita.shakya.1/"
+								target="_blank"
+							>
 								<FaFacebook />
 							</Link>
-							<Link href="/">
+							<Link
+								href="https://twitter.com/shakyasujita"
+								target="_blank"
+							>
 								<FaTwitter />
+							</Link>
+							<Link href="/" target="_blank">
+								<FaInstagram />
 							</Link>
 						</div>
 					</div>

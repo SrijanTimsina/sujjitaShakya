@@ -1,6 +1,6 @@
 import NavStyles from "./navbar.module.css";
 import Link from "next/link";
-import { FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import Sidebar from "../Sidebar/Sidebar";
 
 export default function Navbar() {
@@ -17,11 +17,20 @@ export default function Navbar() {
 					</Link>
 				</div>
 				<div className={`${NavStyles.navLinks} flex gap-4`}>
-					<Link href="/">
+					<Link
+						href="https://www.facebook.com/sujita.shakya.1/"
+						target="_blank"
+					>
 						<FaFacebook className="max-[400px]:text-2xl" />
 					</Link>
-					<Link href="/">
+					<Link
+						href="https://twitter.com/shakyasujita"
+						target="_blank"
+					>
 						<FaTwitter className="max-[400px]:text-2xl" />
+					</Link>
+					<Link href="/" target="_blank">
+						<FaInstagram className="max-[400px]:text-2xl" />
 					</Link>
 				</div>
 			</div>
